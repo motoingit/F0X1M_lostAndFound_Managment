@@ -22,6 +22,18 @@ git commit -m "message"
 
 git push -u origin main
 
+//////
+git switch main
+git reset --hard origin/main
+
+git branch -M main
+
+//? Fetch ensures you have the latest origin/main snapshot.
+//? Reset --hard force-aligns your local branch to that snapshot.
+git fetch origin
+git reset --hard origin/main
+
+
 
 //! some harsh git
 

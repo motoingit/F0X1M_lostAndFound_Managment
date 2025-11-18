@@ -189,7 +189,7 @@ def home():
             })
             log_message('INFO', f'New lost item reported: {title}')
             return redirect('/home')
-
+        
     # Get search parameters
     search_query = request.args.get('search', '')
     search_by = request.args.get('search_by', 'all')

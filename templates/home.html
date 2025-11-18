@@ -37,7 +37,8 @@
                 <form action="/home" method="GET" class="d-flex gap-2">
                     <!-- Search Block -->
                     <div class="input-group">
-                        <input type="text" name="search" class="form-control" placeholder="Search..." value="{{ request.args.get('search', '') }}">
+                        <input type="text" name="search" class="form-control"
+                        placeholder="Search..." value="{{ request.args.get('search', '') }}">
                         <select name="search_by" class="form-select" style="max-width: 70px;">
                             <option value="all" {% if request.args.get('search_by') == 'all' %}selected{% endif %}>All</option>
                             <option value="id" {% if request.args.get('search_by') == 'id' %}selected{% endif %}>Id</option>
