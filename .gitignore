@@ -1,0 +1,21 @@
+# Python virtual environment
+env/
+# Flask instance folder (DBs, logs, uploads)
+instance/
+
+# Personal / local folders
+.myNotes/
+zOPENME/
+
+# VS Code workspace files
+*.code-workspace
+
+# Python cache
+__pycache__/
+*.pyc
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# .git/   should not done

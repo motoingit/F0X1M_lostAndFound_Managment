@@ -24,7 +24,7 @@
 
 ```python
 //? -----------------------------------------------
-pip install virtualenv      // installing the virtual environment
+python -m pip install virtualenv      // installing the virtual environment
 //? -----------------------------------------------
 ```
 

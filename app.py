@@ -431,6 +431,16 @@ def logs():
     print(all_logs)
     return render_template('logs.html', all_logs=all_logs)
 
+@app.cli.command("init-db")
+def init_db_command():
+    #! Initialize the database.
+    try:
+        db.create_all()
+        print("Initialized the database.")
+    except Exception as e:
+        print(f"Error initializing database: {e}")
+
+
 # NOTE: Database initialization command is defined earlier with error handling.
 # The earlier @app.cli.command("init-db") function will be used to initialize the DB.
 
