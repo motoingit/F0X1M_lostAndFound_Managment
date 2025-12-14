@@ -7,12 +7,12 @@
 <div align="center">
 
   <h1 align="center">
-    <a href="https://git.io/typing-svg">
-      <img src="https://readme-typing-svg.herokuapp.com/?lines=Greetings+Programmers!👋;I'm+Mohit_Singh+.+.+.;This+is+my+profile+!&center=true&size=30&duration=3000&color=FF5733&background=00000000">
+    <a>
+      <img src="https://readme-typing-svg.herokuapp.com/?lines=Greetings+Programmers!👋;I'm+Mohit_Singh+.+.+.;&center=true&size=30&duration=3000&color=FF0000&background=00000000">
     </a>
   </h1>
   
-  <a href="#" style="pointer-events:none; cursor:default; text-decoration:none; margin:0 5px;">
+  <a style="pointer-events:none; cursor:default; text-decoration:none; margin:0 5px;">
       <img src="https://img.icons8.com/fluency/96/lost-and-found.png" alt="Lost and Found Logo" width="100">
   </a>
   
@@ -24,17 +24,19 @@
 
 <!-- PROJECT BADGES -->
   <p style="text-align:center; margin:20px 0;">
-    <a href="#" style="pointer-events:none; cursor:default; text-decoration:none; margin:0 5px;">
+    <a style="pointer-events:none; cursor:default; text-decoration:none; margin:0 5px;">
       <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" alt="Flask Badge"/>
     </a>
-    <a href="#" style="pointer-events:none; cursor:default; text-decoration:none; margin:0 5px;">
+    <a style="pointer-events:none; cursor:default; text-decoration:none; margin:0 5px;">
       <img src="https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite Badge"/>
     </a>
-    <a href="#" style="pointer-events:none; cursor:default; text-decoration:none; margin:0 5px;">
+    <a style="pointer-events:none; cursor:default; text-decoration:none; margin:0 5px;">
       <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python Badge"/>
     </a>
   </p>
 
+<br>
+<h3> Click to navigate !</h3>
 <p>
   <a href="#-installation-and-setup"><strong>🚀 Get Started</strong></a> • 
   <a href="#-features"><strong>✨ Features</strong></a> • 
@@ -88,7 +90,7 @@
     </tr>
     <tr>
       <td><b>Deployment</b></td>
-      <td>Gunicorn, dotenv</td>
+      <td>Pyhton-Anywhere</td>
     </tr>
   </table>
 </div>
@@ -114,15 +116,15 @@ Follow these steps to run the project locally:
 #### 🪟 For Windows
 
 ```bash
-python -m venv venv
-venv\Scripts\activate
+python -m pip install virtualenv 
 ```
 
-#### 🍎 For macOS / 🐧 Linux
+```bash
+python -m venv .env
+```
 
 ```bash
-python3 -m venv venv
-source venv/bin/activate
+venv\Scripts\activate
 ```
 
 ---
@@ -148,16 +150,6 @@ flask init-db
 ```bash
 flask run
 ```
-
----
-
-### Optional : Access the Application
-
-After running, open this URL in your browser:
-
-  ```
-    http://127.0.0.1:5000
-  ```
 
 ---
 
@@ -219,9 +211,13 @@ After running, open this URL in your browser:
         ├── index.html
         ├── logs.html
         ├── update.html
+        ├── faq.html
+        ├── home.html
     ├── app.py
     ├── README.md
     └── requirements.txt
+
+  -> some folders like python, env and instance is later genrated
 ```
 
 ---
@@ -279,7 +275,7 @@ Stay connected and explore my work through the following platforms:
 
 [![LeetCode](https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=white)](https://leetcode.com/your_username)
 [![HackerEarth](https://img.shields.io/badge/HackerEarth-323754?style=for-the-badge&logo=hackerearth&logoColor=white)](https://www.hackerearth.com/@your_username)
-[![GitHub](https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/your_username)
+[![linkden](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mohit-singh-9a21a0317)
 
 ---
 
@@ -289,9 +285,9 @@ Stay connected and explore my work through the following platforms:
 **Date:** *October 2025*
 
 <hr>
-  <p align="center" style="color:#00bfa5; font-style:italic; font-size:16px;">
+  <h3 align="center" style="color:#00bfa5; font-style:italic; font-size:30px;">
   🧭 Because every lost item has a story — and every story deserves a return.
-  </p>
+  </h3>
 <hr>
 
 ---

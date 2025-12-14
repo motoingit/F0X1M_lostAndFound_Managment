@@ -1,5 +1,6 @@
 # Python virtual environment
-env/
+.env/
+
 # Flask instance folder (DBs, logs, uploads)
 instance/
 
@@ -7,15 +8,9 @@ instance/
 .myNotes/
 zOPENME/
 
-# VS Code workspace files
-*.code-workspace
 
 # Python cache
 __pycache__/
-*.pyc
 
-# OS junk
-.DS_Store
-Thumbs.db
-
-# .git/   should not done
+#
+.git/

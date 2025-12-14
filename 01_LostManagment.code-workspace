@@ -1,0 +1,84 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+
+  "settings": {
+    /* =========================
+       Python / Flask settings
+       ========================= */
+
+    "python.defaultInterpreterPath": "env/Scripts/python.exe",
+    "python.terminal.activateEnvironment": true,
+
+    /* =========================
+       Editor behavior (project-specific)
+       ========================= */
+
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+
+    /* =========================
+       File hygiene
+       ========================= */
+
+	//! hold for now
+    // "files.exclude": {
+    //   "**/__pycache__": true,
+    //   "**/*.pyc": true,
+    //   "env": true,
+    //   "instance": true
+    // },
+
+    /* =========================
+       Explorer
+       ========================= */
+
+    "explorer.compactFolders": true,
+
+    /* =========================
+       Terminal
+       ========================= */
+
+    "terminal.integrated.defaultProfile.windows": "PowerShell"
+  },
+
+  "extensions": {
+    "recommendations": [
+      "ms-python.python",
+      "ms-python.vscode-pylance",
+      "ms-toolsai.jupyter",
+      "eamodio.gitlens",
+      "esbenp.prettier-vscode"
+    ]
+  },
+
+  "tasks": {
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Flask: Run Development Server",
+        "type": "shell",
+        "command": "env\\Scripts\\python.exe -m flask run",
+        "group": "build",
+        "problemMatcher": [],
+        "options": {
+          "env": {
+            "FLASK_ENV": "development",
+            "FLASK_DEBUG": "1"
+          }
+        }
+      },
+      {
+        "label": "Flask: Init Database",
+        "type": "shell",
+        "command": "flask init-db",
+        "group": "build",
+        "problemMatcher": []
+      }
+    ]
+  }
+}

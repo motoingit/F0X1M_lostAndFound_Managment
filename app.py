@@ -433,12 +433,14 @@ def logs():
 
 @app.cli.command("init-db")
 def init_db_command():
-    #! Initialize the database.
+    """Initialize the database."""
     try:
-        db.create_all()
+        with app.app_context():
+            db.create_all()
         print("Initialized the database.")
     except Exception as e:
         print(f"Error initializing database: {e}")
+
 
 
 # NOTE: Database initialization command is defined earlier with error handling.
@@ -446,7 +448,14 @@ def init_db_command():
 
 # can be [__main__], [filename],
 if __name__ == '__main__':
-    print("I'm On Main\n")
+    if not os.path.exists("instance/lost_items.db"):
+        """Initialize the database."""
+        try:
+            with app.app_context():
+                db.create_all()
+            print("Initialized the database.")
+        except Exception as e:
+            print(f"Error initializing database: {e}")
     #? default
     #! print(app.config) #! run it
     app.run(debug=True) # devlopment mode : on(python app.py) || off(flask run)
